@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "topic": "台中景點入門",
+  "subtitle": "從自然生態到城市文化",
+  "audience": "第一次認識台中景點的學習者",
+  "accessed_date": "2026-11-15",
+  "timezone": "Asia/Taipei",
+  "source_count": 6,
+  "method": "先讀取官方資料的正文，再以自己的話整理摘要、事實與限制，建立有來源編號及互相連結的Wiki頁面。搜尋結果只用來尋找資料，不直接計入ingest完成篇數。",
+  "scope": "介紹景點特色、空間用途與閱讀資料的方法；不提供即時天氣、票價、營業時間、節目時刻、交通時間或一日遊動線。",
+  "sources": [
+    {
+      "source_id": "S01",
+      "wiki_id": "W01",
+      "wiki_slug": "gaomei",
+      "attraction": "高美濕地",
+      "title": "高美重要濕地(國家級)",
+      "publisher": "內政部國家公園署",
+      "platform": "臺灣國家公園主題網",
+      "canonical_url": "https://www.taiwan.nps.gov.tw/home/zh-tw/wetlands/21754.html",
+      "accessed_at": "2026-11-15",
+      "source_updated_at": null,
+      "body_present": true,
+      "evidence_location": "類型、簡介、重要生態資源及濕地及周邊遊憩資訊",
+      "theme": "自然生態",
+      "summary": "高美濕地是海洋或海岸型濕地，河川帶來的養分與潮汐共同影響這裡的環境。濕地提供生物食物與棲息空間，也吸引遷徙性水鳥。認識這個景點時，可以把重點放在濕地環境和生態的關係。",
+      "key_facts": [
+        {
+          "fact_id": "S01-F1",
+          "text": "官方將高美重要濕地列為海洋或海岸型濕地。",
+          "location": "類型，L78-L80"
+        },
+        {
+          "fact_id": "S01-F2",
+          "text": "河川輸入的養分與潮汐影響濕地環境。",
+          "location": "簡介及重要生態資源，L94-L99"
+        },
+        {
+          "fact_id": "S01-F3",
+          "text": "濕地有鳥類、蟹類等生物，也具有生態保育價值。",
+          "location": "重要生態資源及濕地及周邊遊憩資訊，L98-L119"
+        }
+      ],
+      "teaching_point": "先理解環境為什麼能形成生物的棲地，再認識景點的觀察重點。",
+      "check_question": "高美濕地最適合用哪一個主題來認識？",
+      "check_answer": "自然生態，因為濕地環境與生物棲息有關。",
+      "limitations": [
+        "不同官方頁面可能採用不同的範圍與面積口徑，本教材不混用面積數字。",
+        "景點介紹不能用來推定今天的天氣、潮汐或木棧道開放狀況。"
+      ],
+      "related_wiki_ids": [
+        "W06",
+        "W07",
+        "W08"
+      ]
+    },
+    {
+      "source_id": "S02",
+      "wiki_id": "W02",
+      "wiki_slug": "shenji",
+      "attraction": "審計新村",
+      "title": "審計新村",
+      "publisher": "交通部觀光署",
+      "platform": "台灣好行旅遊服務網",
+      "canonical_url": "https://www.taiwantrip.com.tw/Frontend/Attractions/TripSpecialp/S11805",
+      "accessed_at": "2026-11-15",
+      "source_updated_at": null,
+      "body_present": true,
+      "evidence_location": "景點簡介",
+      "theme": "文創與青年創業",
+      "summary": "審計新村原本是臺灣省政府宿舍群的一部分，後來轉型為青年創業基地。園區裡的老屋被改作各式文創店家與活動空間。從這個例子可以觀察，舊建築如何產生新的使用方式。",
+      "key_facts": [
+        {
+          "fact_id": "S02-F1",
+          "text": "審計新村原本屬於臺灣省政府宿舍群。",
+          "location": "景點簡介，L86-L88"
+        },
+        {
+          "fact_id": "S02-F2",
+          "text": "重新規劃後轉型為青年創業基地。",
+          "location": "景點簡介，L86-L88"
+        },
+        {
+          "fact_id": "S02-F3",
+          "text": "園區有由老屋改建的文創小店。",
+          "location": "景點簡介，L86-L88"
+        }
+      ],
+      "teaching_point": "用原本的用途和現在的用途作比較，理解老屋再利用。",
+      "check_question": "審計新村的老屋現在主要呈現哪一類特色？",
+      "check_answer": "文創與青年創業。",
+      "limitations": [
+        "店家名單、市集日期與個別店家的營業情況可能變動。",
+        "教材的主題分類是為了教學整理，不是官方旅遊排名。"
+      ],
+      "related_wiki_ids": [
+        "W04",
+        "W07",
+        "W08"
+      ]
+    },
+    {
+      "source_id": "S03",
+      "wiki_id": "W03",
+      "wiki_slug": "rainbow",
+      "attraction": "彩虹村",
+      "title": "彩虹村",
+      "publisher": "交通部觀光署",
+      "platform": "臺灣觀光資訊網",
+      "canonical_url": "https://www.taiwan.net.tw/m1.aspx?id=A12-00236&sNo=0001016",
+      "accessed_at": "2026-11-15",
+      "source_updated_at": null,
+      "body_present": true,
+      "evidence_location": "景點特色",
+      "theme": "彩繪與藝術共創",
+      "summary": "彩虹村以老屋上的鮮豔彩繪聞名，黃永阜的創作是認識這個景點的重要起點。官方介紹也提到，重新開放後加入在地藝術家與學子的共創空間。閱讀資料時要區分早期創作與後續發展，避免把不同時期的內容混在一起。",
+      "key_facts": [
+        {
+          "fact_id": "S03-F1",
+          "text": "彩虹村的景觀特色包含老屋上的彩繪。",
+          "location": "景點特色，L188-L190"
+        },
+        {
+          "fact_id": "S03-F2",
+          "text": "黃永阜的彩繪創作是景點的重要背景。",
+          "location": "景點特色，L188-L190"
+        },
+        {
+          "fact_id": "S03-F3",
+          "text": "官方介紹提到後續加入在地藝術家及學子共創的空間。",
+          "location": "景點特色，L188-L190"
+        }
+      ],
+      "teaching_point": "看見藝術如何改變空間，也練習區分景點不同時期的資訊。",
+      "check_question": "為什麼不宜把現在園區的所有作品都寫成出自同一個人？",
+      "check_answer": "因為官方介紹也提到後續的藝術家與學子共創。",
+      "limitations": [
+        "本教材不把所有現有作品都歸給同一位創作者。",
+        "目前展示範圍與開放安排仍須查詢最新公告。"
+      ],
+      "related_wiki_ids": [
+        "W02",
+        "W07",
+        "W08"
+      ]
+    },
+    {
+      "source_id": "S04",
+      "wiki_id": "W04",
+      "wiki_slug": "miyahara",
+      "attraction": "宮原眼科",
+      "title": "宮原眼科",
+      "publisher": "臺中市政府觀光旅遊局",
+      "platform": "交通部觀光署觀光多媒體開放資料",
+      "canonical_url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_000793",
+      "accessed_at": "2026-11-15",
+      "source_updated_at": "2026-04-22T09:36:00+08:00",
+      "body_present": true,
+      "evidence_location": "主文及資料摘要",
+      "theme": "老屋再利用",
+      "summary": "宮原眼科的舊址經過重新利用，保留紅磚牆與舊牌樓等建築元素。室內則以挑高、復古圖書館風格形成新的空間感。它適合和審計新村放在一起比較，觀察不同的老屋如何被重新使用。",
+      "key_facts": [
+        {
+          "fact_id": "S04-F1",
+          "text": "宮原眼科舊址位在鄰近臺中車站的綠川旁。",
+          "location": "主文，L23-L27"
+        },
+        {
+          "fact_id": "S04-F2",
+          "text": "建築保留紅磚牆與舊牌樓。",
+          "location": "主文，L27"
+        },
+        {
+          "fact_id": "S04-F3",
+          "text": "室內裝飾採用復古挑高圖書館風格。",
+          "location": "主文，L27"
+        }
+      ],
+      "teaching_point": "把保留下來的舊元素和加入的新設計分開觀察。",
+      "check_question": "宮原眼科與審計新村可以一起比較的重點是什麼？",
+      "check_answer": "老屋再利用，以及原有建築和新用途之間的關係。",
+      "limitations": [
+        "不依照景點名稱推定這裡仍提供眼科醫療服務。",
+        "商品種類、價格與店內營業情況不在本教材範圍。"
+      ],
+      "related_wiki_ids": [
+        "W02",
+        "W07",
+        "W08"
+      ]
+    },
+    {
+      "source_id": "S05",
+      "wiki_id": "W05",
+      "wiki_slug": "opera-house",
+      "attraction": "臺中國家歌劇院",
+      "title": "臺中國家歌劇院",
+      "publisher": "臺中市政府觀光旅遊局",
+      "platform": "交通部觀光署觀光多媒體開放資料",
+      "canonical_url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_000942",
+      "accessed_at": "2026-11-15",
+      "source_updated_at": "2026-09-07T17:35:00+08:00",
+      "body_present": true,
+      "evidence_location": "主文及資料摘要",
+      "theme": "建築與表演藝術",
+      "summary": "臺中國家歌劇院是由伊東豊雄設計的大型展演空間。官方資料介紹了3座專業劇場，以及廣場、戶外劇場與空中花園等空間。理解這個景點時，可以把建築設計和表演藝術的用途一起看。",
+      "key_facts": [
+        {
+          "fact_id": "S05-F1",
+          "text": "臺中國家歌劇院由日本建築師伊東豊雄設計。",
+          "location": "主文，L23-L27"
+        },
+        {
+          "fact_id": "S05-F2",
+          "text": "建築內設有3座專業劇場。",
+          "location": "主文，L27"
+        },
+        {
+          "fact_id": "S05-F3",
+          "text": "官方介紹也包含廣場、戶外劇場和屋頂空中花園。",
+          "location": "主文，L27"
+        }
+      ],
+      "teaching_point": "用空間的功能理解文化建築，不只記住外觀。",
+      "check_question": "認識歌劇院時，除了建築外觀還可以注意什麼？",
+      "check_answer": "劇場及其他展演、公共空間的用途。",
+      "limitations": [
+        "介紹有某個空間，不代表該空間在任何時間都能進入。",
+        "節目內容、票價與參觀安排須另外查詢官方最新資訊。"
+      ],
+      "related_wiki_ids": [
+        "W06",
+        "W07",
+        "W08"
+      ]
+    },
+    {
+      "source_id": "S06",
+      "wiki_id": "W06",
+      "wiki_slug": "taichung-park",
+      "attraction": "臺中公園",
+      "title": "臺中公園",
+      "publisher": "臺中市政府觀光旅遊局",
+      "platform": "交通部觀光署觀光多媒體開放資料",
+      "canonical_url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_000028",
+      "accessed_at": "2026-11-15",
+      "source_updated_at": "2026-09-08T14:12:00+08:00",
+      "body_present": true,
+      "evidence_location": "主文及資料摘要",
+      "theme": "城市歷史與休閒",
+      "summary": "臺中公園創立於1903年，是具有歷史背景的城市公園。園內有人工湖、亭臺、曲橋及休閒運動設施。它可以幫助初學者理解，城市地標也能同時是居民日常使用的休閒空間。",
+      "key_facts": [
+        {
+          "fact_id": "S06-F1",
+          "text": "臺中公園創立於1903年。",
+          "location": "主文，L23-L27"
+        },
+        {
+          "fact_id": "S06-F2",
+          "text": "園內有人工湖、亭臺與曲橋等造景。",
+          "location": "主文，L27"
+        },
+        {
+          "fact_id": "S06-F3",
+          "text": "官方資料介紹了休閒運動與親子活動設施。",
+          "location": "主文及景點類型，L27-L33"
+        }
+      ],
+      "teaching_point": "把城市歷史和現在的日常使用方式連起來。",
+      "check_question": "臺中公園除了有歷史背景，還有哪一種功能？",
+      "check_answer": "提供城市居民和旅客休閒、運動的空間。",
+      "limitations": [
+        "不把官方簡介列出的設施視為現場即時可用狀態。",
+        "本頁不提供遊憩設施收費或開放時間。"
+      ],
+      "related_wiki_ids": [
+        "W01",
+        "W05",
+        "W07",
+        "W08"
+      ]
+    }
+  ]
+}

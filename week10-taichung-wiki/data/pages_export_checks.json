@@ -1,0 +1,13 @@
+{
+  "kind": "github_pages_export_checks",
+  "markdown_count": 8,
+  "embedded_markdown_matches_originals": true,
+  "root_html_matches_dist": true,
+  "markdown_download_method": "瀏覽器由內嵌原文建立Blob，保留原始.md檔名，不依賴Pages的Markdown路徑。",
+  "runtime_download_status": "此檔只記錄原文一致與匯出檢查；實際下載仍需瀏覽器驗收。",
+  "files_sha256": {
+    "index.html": "4d2f4fcf120fb78fe94c690eb3f2e78ebad782a6d2aa96498f5b5448a6c01eee",
+    "slides.html": "7a2a833a37c668d9a873b75da512a9235d4a39d2963ef55de143486926b0135f",
+    "process.html": "804c02dd39db650332b1da50b95039ec829b54b20b92fc47cb5d482be080e516"
+  }
+}

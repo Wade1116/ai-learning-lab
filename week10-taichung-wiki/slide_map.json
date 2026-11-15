@@ -1,0 +1,189 @@
+[
+  {
+    "page": 1,
+    "title": "台中景點入門",
+    "wiki_ids": [],
+    "wiki_files": [],
+    "source_ids": []
+  },
+  {
+    "page": 2,
+    "title": "先用主題建立概念",
+    "wiki_ids": [
+      "W07"
+    ],
+    "wiki_files": [
+      "W07-comparison.md"
+    ],
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  },
+  {
+    "page": 3,
+    "title": "高美濕地的學習重點",
+    "wiki_ids": [
+      "W01"
+    ],
+    "wiki_files": [
+      "W01-gaomei.md"
+    ],
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "page": 4,
+    "title": "審計新村的學習重點",
+    "wiki_ids": [
+      "W02"
+    ],
+    "wiki_files": [
+      "W02-shenji.md"
+    ],
+    "source_ids": [
+      "S02"
+    ]
+  },
+  {
+    "page": 5,
+    "title": "彩虹村的學習重點",
+    "wiki_ids": [
+      "W03"
+    ],
+    "wiki_files": [
+      "W03-rainbow.md"
+    ],
+    "source_ids": [
+      "S03"
+    ]
+  },
+  {
+    "page": 6,
+    "title": "宮原眼科的學習重點",
+    "wiki_ids": [
+      "W04"
+    ],
+    "wiki_files": [
+      "W04-miyahara.md"
+    ],
+    "source_ids": [
+      "S04"
+    ]
+  },
+  {
+    "page": 7,
+    "title": "臺中國家歌劇院的學習重點",
+    "wiki_ids": [
+      "W05"
+    ],
+    "wiki_files": [
+      "W05-opera-house.md"
+    ],
+    "source_ids": [
+      "S05"
+    ]
+  },
+  {
+    "page": 8,
+    "title": "臺中公園的學習重點",
+    "wiki_ids": [
+      "W06"
+    ],
+    "wiki_files": [
+      "W06-taichung-park.md"
+    ],
+    "source_ids": [
+      "S06"
+    ]
+  },
+  {
+    "page": 9,
+    "title": "先看共同點再說出差異",
+    "wiki_ids": [
+      "W07",
+      "W03",
+      "W05"
+    ],
+    "wiki_files": [
+      "W07-comparison.md",
+      "W03-rainbow.md",
+      "W05-opera-house.md"
+    ],
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  },
+  {
+    "page": 10,
+    "title": "資料的邊界",
+    "wiki_ids": [
+      "W08"
+    ],
+    "wiki_files": [
+      "W08-boundaries.md"
+    ],
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  },
+  {
+    "page": 11,
+    "title": "學習檢核",
+    "wiki_ids": [
+      "W01",
+      "W04",
+      "W07",
+      "W08"
+    ],
+    "wiki_files": [
+      "W01-gaomei.md",
+      "W04-miyahara.md",
+      "W07-comparison.md",
+      "W08-boundaries.md"
+    ],
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  },
+  {
+    "page": 12,
+    "title": "總結與資料來源",
+    "wiki_ids": [
+      "W07",
+      "W08"
+    ],
+    "wiki_files": [
+      "W07-comparison.md",
+      "W08-boundaries.md"
+    ],
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  }
+]

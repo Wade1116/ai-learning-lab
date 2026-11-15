@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-11-15T10:44:44+08:00",
+  "kind": "static_checks",
+  "check_count": 10,
+  "passed_count": 10,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "主要來源數量",
+      "passed": true,
+      "detail": "6篇主要來源，來源編號不重複。"
+    },
+    {
+      "name": "正文與來源欄位",
+      "passed": true,
+      "detail": "6篇都有正文確認、標題、網址、發布者、讀取日期與正文定位。"
+    },
+    {
+      "name": "Wiki來源對應",
+      "passed": true,
+      "detail": "8篇Wiki的來源編號均可在sources.json找到。"
+    },
+    {
+      "name": "Wiki關聯頁面",
+      "passed": true,
+      "detail": "所有關聯Wiki頁面存在，沒有指向不存在的Wiki編號。"
+    },
+    {
+      "name": "簡報與Wiki對應",
+      "passed": true,
+      "detail": "12頁簡報保留Wiki編號及來源；第1頁為自編學習引導。"
+    },
+    {
+      "name": "景點簡報讀取Wiki",
+      "passed": true,
+      "detail": "第3至8頁的重點直接取自對應Markdown的可回查的資料段落。"
+    },
+    {
+      "name": "文字與引號格式",
+      "passed": true,
+      "detail": "Wiki和簡報內容未出現上下引號、彎引號或中文與英文數字之間的空格。"
+    },
+    {
+      "name": "JavaScript語法",
+      "passed": true,
+      "detail": "Wiki搜尋與簡報互動腳本均通過Node語法檢查。"
+    },
+    {
+      "name": "本地連結與HTML識別",
+      "passed": true,
+      "detail": "本地檔案連結均有目標，HTML沒有重複id；外部網址僅檢查保留，未宣稱即時可用。"
+    },
+    {
+      "name": "字型與黑字樣式",
+      "passed": true,
+      "detail": "樣式指定Times New Roman、標楷體與黑字，段落左右對齊；實際字型顯示仍取決於裝置安裝字型。"
+    }
+  ],
+  "browser_qa": "由主執行者在瀏覽器完成後另存data/browser_checks.json；靜態檢查不代表瀏覽器操作已完成。"
+}

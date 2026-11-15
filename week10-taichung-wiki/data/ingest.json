@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0",
+  "run_id": "taichung-wiki-20261115",
+  "recorded_at": "2026-11-15T10:34:14+08:00",
+  "timezone": "Asia/Taipei",
+  "execution_note": "本紀錄由本次AI協作的實際網頁讀取結果整理。時間欄是整理紀錄的時間，不是每一次請求的精確時間。網頁工具未提供HTTP狀態碼，因此未將開啟結果描述成HTTP200。",
+  "gate": {
+    "rule": "有標題、有來源網址、有與景點相符的正文，且摘要中的事實可回查原文，才接受為Wiki主要來源。",
+    "rejected_input": "僅有搜尋摘要、頁面標題、網站導覽或頁尾。",
+    "placement": "取得資料之後、整理Wiki之前。",
+    "recovery": "改讀其他官方頁面或補讀正文區段，重新檢查後才生成Wiki。"
+  },
+  "summary": {
+    "initial_unique_attractions": 6,
+    "initial_body_missing": 6,
+    "initial_accepted": 0,
+    "final_accepted_primary_sources": 6,
+    "final_body_verified": 6,
+    "search_queries_count": 9,
+    "read_operations": 17,
+    "find_operations": 2,
+    "counting_note": "6篇是最終納入Wiki的不同主要來源；補查、重新開啟相同行號區段和find都不重複計成新的ingest篇數。首輪正文缺失6筆，只描述本次執行，不能推論其他網站或之後執行的失敗率。"
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "label": "讀取臺中官方景點頁",
+      "attempted": 6,
+      "accepted": 0,
+      "rejected": 6,
+      "result": "BODY_MISSING"
+    },
+    {
+      "round": 2,
+      "label": "補讀官方正文並審核",
+      "attempted_attractions": 6,
+      "accepted": 6,
+      "rejected": 0,
+      "result": "PASS"
+    }
+  ],
+  "search_batches": [
+    {
+      "engine": "system2",
+      "purpose": "尋找前三個景點官方頁",
+      "queries": [
+        "site.travel.taichung.gov.tw 高美濕地 景點介紹",
+        "site.travel.taichung.gov.tw 審計新村 景點介紹",
+        "site.travel.taichung.gov.tw 彩虹眷村 景點介紹"
+      ],
+      "used_for_ingest_count": false
+    },
+    {
+      "engine": "system2",
+      "purpose": "尋找後三個景點官方頁",
+      "queries": [
+        "site.travel.taichung.gov.tw 宮原眼科 景點介紹",
+        "site.travel.taichung.gov.tw 臺中國家歌劇院 景點介紹",
+        "site.travel.taichung.gov.tw 臺中公園 景點介紹"
+      ],
+      "used_for_ingest_count": false
+    },
+    {
+      "engine": "system1",
+      "purpose": "補查官方來源與檢查搜尋擷取落差",
+      "queries": [
+        "高美濕地 景點介紹 泥質 沙質 雲林莞草",
+        "審計新村 景點介紹 審計處 員工眷舍 青年創業",
+        "彩虹村 景點介紹 黃永阜 共創"
+      ],
+      "used_for_ingest_count": false
+    }
+  ],
+  "operations": [
+    {
+      "operation_id": "R01",
+      "operation": "open",
+      "phase": "initial_read",
+      "source_id": "S01",
+      "attraction": "高美濕地",
+      "url": "https://travel.taichung.gov.tw/zh-tw/attractions/intro/54",
+      "title_present": true,
+      "body_present": false,
+      "returned_line_count": 106,
+      "status": "rejected",
+      "reason": "文字擷取結果只有網站導覽與頁尾，沒有景點正文。不能以標題或搜尋摘要替代讀取成功。",
+      "next_action": "尋找並讀取其他官方頁面，再檢查正文與主題是否相符。"
+    },
+    {
+      "operation_id": "R02",
+      "operation": "open",
+      "phase": "initial_read",
+      "source_id": "S02",
+      "attraction": "審計新村",
+      "url": "https://travel.taichung.gov.tw/zh-tw/attractions/intro/1139",
+      "title_present": true,
+      "body_present": false,
+      "returned_line_count": 106,
+      "status": "rejected",
+      "reason": "文字擷取結果只有網站導覽與頁尾，沒有景點正文。不能以標題或搜尋摘要替代讀取成功。",
+      "next_action": "尋找並讀取其他官方頁面，再檢查正文與主題是否相符。"
+    },
+    {
+      "operation_id": "R03",
+      "operation": "open",
+      "phase": "initial_read",
+      "source_id": "S03",
+      "attraction": "彩虹村",
+      "url": "https://travel.taichung.gov.tw/zh-tw/attractions/intro/574",
+      "title_present": true,
+      "body_present": false,
+      "returned_line_count": 106,
+      "status": "rejected",
+      "reason": "文字擷取結果只有網站導覽與頁尾，沒有景點正文。不能以標題或搜尋摘要替代讀取成功。",
+      "next_action": "尋找並讀取其他官方頁面，再檢查正文與主題是否相符。"
+    },
+    {
+      "operation_id": "R04",
+      "operation": "open",
+      "phase": "initial_read",
+      "source_id": "S04",
+      "attraction": "宮原眼科",
+      "url": "https://www.taichung.travel/zh-tw/Attractions/Intro/793/",
+      "title_present": true,
+      "body_present": false,
+      "returned_line_count": 106,
+      "status": "rejected",
+      "reason": "文字擷取結果只有網站導覽與頁尾，沒有景點正文。不能以標題或搜尋摘要替代讀取成功。",
+      "next_action": "尋找並讀取其他官方頁面，再檢查正文與主題是否相符。"
+    },
+    {
+      "operation_id": "R05",
+      "operation": "open",
+      "phase": "initial_read",
+      "source_id": "S05",
+      "attraction": "臺中國家歌劇院",
+      "url": "https://travel.taichung.gov.tw/zh-tw/Attractions/Intro/942/",
+      "title_present": true,
+      "body_present": false,
+      "returned_line_count": 106,
+      "status": "rejected",
+      "reason": "文字擷取結果只有網站導覽與頁尾，沒有景點正文。不能以標題或搜尋摘要替代讀取成功。",
+      "next_action": "尋找並讀取其他官方頁面，再檢查正文與主題是否相符。"
+    },
+    {
+      "operation_id": "R06",
+      "operation": "open",
+      "phase": "initial_read",
+      "source_id": "S06",
+      "attraction": "臺中公園",
+      "url": "https://travel.taichung.gov.tw/zh-tw/Attractions/Intro/28/",
+      "title_present": true,
+      "body_present": false,
+      "returned_line_count": 106,
+      "status": "rejected",
+      "reason": "文字擷取結果只有網站導覽與頁尾，沒有景點正文。不能以標題或搜尋摘要替代讀取成功。",
+      "next_action": "尋找並讀取其他官方頁面，再檢查正文與主題是否相符。"
+    },
+    {
+      "operation_id": "R07",
+      "operation": "open",
+      "phase": "official_fallback",
+      "source_id": "S02",
+      "url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_001139",
+      "title_present": true,
+      "body_present": true,
+      "status": "supplementary",
+      "reason": "取得宿舍背景正文，但未涵蓋本教材需要的青年創業重點，繼續補讀台灣好行。"
+    },
+    {
+      "operation_id": "R08",
+      "operation": "open",
+      "phase": "official_fallback",
+      "source_id": "S04",
+      "url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_000793",
+      "title_present": true,
+      "body_present": true,
+      "status": "accepted",
+      "reason": "取得主文與資料提供機關，作為S04主要來源。"
+    },
+    {
+      "operation_id": "R09",
+      "operation": "open",
+      "phase": "official_fallback",
+      "source_id": "S05",
+      "url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_000942",
+      "title_present": true,
+      "body_present": true,
+      "status": "accepted",
+      "reason": "取得主文與資料提供機關，作為S05主要來源。"
+    },
+    {
+      "operation_id": "R10",
+      "operation": "open",
+      "phase": "official_fallback",
+      "source_id": "S06",
+      "url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_000028",
+      "title_present": true,
+      "body_present": true,
+      "status": "accepted",
+      "reason": "取得主文與資料提供機關，作為S06主要來源。"
+    },
+    {
+      "operation_id": "R11",
+      "operation": "open",
+      "phase": "official_fallback",
+      "source_id": "S01",
+      "url": "https://www.taiwan.net.tw/m1.aspx?id=r117&sNo=0001016",
+      "title_present": true,
+      "body_present": null,
+      "status": "needs_body_window",
+      "reason": "取得頁面，但這次回傳的開頭區段主要是導覽，尚未看到景點特色段落。"
+    },
+    {
+      "operation_id": "R12",
+      "operation": "open",
+      "phase": "official_fallback",
+      "source_id": "S03",
+      "url": "https://www.taiwan.net.tw/m1.aspx?id=A12-00236&sNo=0001016",
+      "title_present": true,
+      "body_present": null,
+      "status": "needs_body_window",
+      "reason": "取得頁面，但這次回傳的開頭區段主要是導覽，尚未看到景點特色段落。"
+    },
+    {
+      "operation_id": "R13",
+      "operation": "find",
+      "phase": "locate_body",
+      "source_id": "S01",
+      "url": "https://www.taiwan.net.tw/m1.aspx?id=r117&sNo=0001016",
+      "pattern": "高美濕地位於",
+      "body_present": null,
+      "status": "no_match",
+      "reason": "find回傳未找到字串，改用頁面行號開啟相關區段；這不是新增一篇來源。"
+    },
+    {
+      "operation_id": "R14",
+      "operation": "find",
+      "phase": "locate_body",
+      "source_id": "S03",
+      "url": "https://www.taiwan.net.tw/m1.aspx?id=A12-00236&sNo=0001016",
+      "pattern": "彩虹村位於",
+      "body_present": null,
+      "status": "no_match",
+      "reason": "find回傳未找到字串，改用頁面行號開啟相關區段；這不是新增一篇來源。"
+    },
+    {
+      "operation_id": "R15",
+      "operation": "open",
+      "phase": "complete_and_review",
+      "source_id": "S02",
+      "url": "https://www.taiwantrip.com.tw/Frontend/Attractions/TripSpecialp/S11805",
+      "title_present": true,
+      "body_present": true,
+      "evidence_location": "景點簡介",
+      "status": "accepted",
+      "reason": "讀到宿舍轉型與青年創業正文，作為S02主要來源。"
+    },
+    {
+      "operation_id": "R16",
+      "operation": "open",
+      "phase": "complete_and_review",
+      "source_id": "S03",
+      "url": "https://travel.taichung.gov.tw/zh-tw/event/newsdetail/8708",
+      "title_present": true,
+      "body_present": true,
+      "evidence_location": "2024年新聞主文",
+      "status": "supplementary",
+      "reason": "補查黃永阜創作背景，僅作查核資料，不另計一個主要景點來源。"
+    },
+    {
+      "operation_id": "R17",
+      "operation": "open",
+      "phase": "complete_and_review",
+      "source_id": "S01",
+      "url": "https://www.taiwan.net.tw/m1.aspx?id=r117&sNo=0001016",
+      "title_present": true,
+      "body_present": true,
+      "evidence_location": "景點特色，L190-L196",
+      "status": "supplementary",
+      "reason": "已讀到正文；面積數值與其他官方頁面的數值不同，未混用數字，另採國家公園署濕地資料。"
+    },
+    {
+      "operation_id": "R18",
+      "operation": "open",
+      "phase": "complete_and_review",
+      "source_id": "S03",
+      "url": "https://www.taiwan.net.tw/m1.aspx?id=A12-00236&sNo=0001016",
+      "title_present": true,
+      "body_present": true,
+      "evidence_location": "景點特色，L190",
+      "status": "accepted",
+      "reason": "讀到創作背景及後續共創資訊，作為S03主要來源。"
+    },
+    {
+      "operation_id": "R19",
+      "operation": "open",
+      "phase": "complete_and_review",
+      "source_id": "S01",
+      "url": "https://www.taiwan.nps.gov.tw/home/zh-tw/wetlands/21754.html",
+      "title_present": true,
+      "body_present": true,
+      "evidence_location": "類型、簡介與重要生態資源",
+      "status": "accepted",
+      "reason": "讀到海岸型濕地、生態與環境介紹，作為S01主要來源。"
+    }
+  ],
+  "accepted_sources": [
+    {
+      "source_id": "S01",
+      "wiki_id": "W01",
+      "url": "https://www.taiwan.nps.gov.tw/home/zh-tw/wetlands/21754.html",
+      "body_present": true,
+      "checked_locations": "類型、簡介、重要生態資源及濕地及周邊遊憩資訊"
+    },
+    {
+      "source_id": "S02",
+      "wiki_id": "W02",
+      "url": "https://www.taiwantrip.com.tw/Frontend/Attractions/TripSpecialp/S11805",
+      "body_present": true,
+      "checked_locations": "景點簡介"
+    },
+    {
+      "source_id": "S03",
+      "wiki_id": "W03",
+      "url": "https://www.taiwan.net.tw/m1.aspx?id=A12-00236&sNo=0001016",
+      "body_present": true,
+      "checked_locations": "景點特色"
+    },
+    {
+      "source_id": "S04",
+      "wiki_id": "W04",
+      "url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_000793",
+      "body_present": true,
+      "checked_locations": "主文及資料摘要"
+    },
+    {
+      "source_id": "S05",
+      "wiki_id": "W05",
+      "url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_000942",
+      "body_present": true,
+      "checked_locations": "主文及資料摘要"
+    },
+    {
+      "source_id": "S06",
+      "wiki_id": "W06",
+      "url": "https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_387000000a_000028",
+      "body_present": true,
+      "checked_locations": "主文及資料摘要"
+    }
+  ],
+  "content_review": [
+    {
+      "issue_id": "C01",
+      "source_id": "S01",
+      "finding": "不同官方頁面呈現不同範圍或面積口徑。",
+      "evidence_urls": [
+        "https://www.taiwan.net.tw/m1.aspx?id=r117&sNo=0001016",
+        "https://www.taiwan.nps.gov.tw/home/zh-tw/wetlands/21754.html"
+      ],
+      "action": "教材不需要面積比較，因此不納入面積數字；保留有正文支持的濕地生態介紹。",
+      "status": "resolved_with_scope"
+    },
+    {
+      "issue_id": "C02",
+      "source_id": "S03",
+      "finding": "同一篇介紹包含早期創作與後續共創的不同時間脈絡。",
+      "evidence_urls": [
+        "https://www.taiwan.net.tw/m1.aspx?id=A12-00236&sNo=0001016"
+      ],
+      "action": "將創作背景與後續發展分開整理，不把所有現有作品都歸給單一創作者。",
+      "status": "resolved_with_qualified_summary"
+    }
+  ]
+}
